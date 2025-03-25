@@ -1,0 +1,32 @@
+p {
+	/* 字体颜色: 茶红色 */
+	color:  maroon;
+	font-size: 20px
+}
+	h1, h2 {
+	font-family: Arial;
+	color: grey;
+	font-size: 50px
+}
+
+h1 {
+	font-family: Arial;
+	border-bottom:1px solid black;
+}
+body {
+	font-family: Arial;
+	font-size: 1.5em;
+}
+em {
+	font-family: "Cascadia Mono";
+}
+body{
+	color: yellowgreen;
+	color: rgb(22, 97, 225);
+	color: #1661ab;
+	color: rgba(39,177,182,0.8);
+	color: #2775b6CC;
+}
+p {
+  font-style: italic;
+}
