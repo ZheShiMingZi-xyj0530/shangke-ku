@@ -1,9 +1,5 @@
-p {
-	font-family: Verdana, Geneva,Arial;
-}
-h1,h2{
-border-bottom: thin dotted #888888;
-color: #cc6600;
+body {
+  font-family: Verdana, Geneva, Arial,sans-serif;;
 }
 html{
   font-size: 12px;
@@ -17,4 +13,8 @@ h2 {
 }
 blockquote{
   font-style: italic;
+}
+h1,h2{
+  border-bottom: thin dotted #888888;
+  color: #cc6600;
 }
