@@ -23,21 +23,20 @@ body {
   border-width:        1px;
   border-style:        dashed;
   background-color:    #a7cece;
-  border-color: white;
-  border-width: 1px;
-  border-style: dashed;
-  background-color: #a7cece;
-  padding: 25px;
-  margin: 30px;
+  padding:             25px; 
+  margin:              30px; 
+  line-height: 1.9em;
+  font-style: italic;
+  color: #444444;
+  font-family: Georgia, "Times New Roman";
+    background-image: url(images/background.gif);
+    background-repeat:no-repeat;
+    background-position: top left;
+    padding: 25px;
+    padding-left: 80px;
+    border-radius: 0 30px 0 30px;
     line-height: 1.9em;
-    font-style: italic;
-    color: #444444;
-    font-family: Georgia, "Times New Roman";
-      background-image: url(images/background.gif);
-      background-repeat:no-repeat;
-      background-position: top left;
-      padding: 25px;
-      padding-left: 80px;
-      margin-right: 250px;
-      
 }
+/*p.guarantee {   
+	font-size: 5vw; 
+}有用再用*/
