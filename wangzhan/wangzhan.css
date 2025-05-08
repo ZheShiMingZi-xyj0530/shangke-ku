@@ -1,0 +1,123 @@
+
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vw; /* 强制横向布局 */ /* 允许横向滚动 */
+  }
+  
+  /* 调整头部为横向排列 */
+  .layout-header {
+    position: fixed;
+    width: 100vw;
+    height: 173px; /* 固定高度 */
+    display: flex;
+  }
+  
+  /* 主要内容区域横向排列 */
+  .body {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+  }
+  
+  /* 横向菜单样式 */
+  .menu--level-0 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+*.fixed-top {
+    position: fixed;
+    /* 新增尺寸限制 */
+    width: 100vw;    /* 视口宽度 */
+    height: 100vh;   /* 视口高度 */
+    overflow: auto;  /* 内容超出时显示滚动条 */
+  }
+  
+/* 修复 “应为 @ 规则或选择器” 问题，添加一个简单的选择器 */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1000; /* 确保在其他内容之上 */
+  }
+body {
+    margin: 0;
+}
+/* 为解决 “应为 @ 规则或选择器” 问题，这里添加一个空的样式声明以符合语法要求 */
+body {
+    margin: 0;
+}
+  
+  /* 新增固定尺寸容器样式 */
+  .fixed-container {
+    width: 800px;    /* 固定宽度 */
+    height: 600px;   /* 固定高度 */
+    overflow: hidden; /* 隐藏超出内容 */
+    resize: none;    /* 禁止调整大小 */
+  }
+
+    .layout-header.is-large {
+        box-shadow: rgba(0, 19, 55, 0.5) 0px 16px 0px;
+    }
+
+
+
+    .layout-header {
+        transition: box-shadow 0.3s 0.3s;
+    }
+    .layout-header {
+        position: fixed;
+    }
+
+
+.layout-header {
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: rgb(178, 187, 205);
+    background-color: rgb(0, 32, 91);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+用户代理样式表
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+    body {
+        font-size: 15px;
+        line-height: 1.84;
+    }
+
+
+body {
+    color: rgb(16, 18, 20);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.54;
+}
+
+html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
