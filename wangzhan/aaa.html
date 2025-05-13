@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京都大学</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 头部样式 */
+        .layout-header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .layout-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* 主标题 */
+        .university-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .university-title h1 {
+            color: #800000;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .university-title h2 {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+        
+        /* 主导航菜单 */
+        .main-menu {
+            margin: 20px 0;
+        }
+        
+        .main-menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-menu li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        .main-menu li:after {
+            content: "|";
+            position: absolute;
+            right: -15px;
+            color: #ccc;
+        }
+        
+        .main-menu li:last-child:after {
+            display: none;
+        }
+        
+        .main-menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .main-menu a:hover {
+            color: #800000;
+        }
+        
+        /* 分隔线 */
+        .divider {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 15px auto;
+            width: 80%;
+        }
+        
+        /* 快速链接区域 */
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .quick-links-section {
+            margin: 0 20px;
+        }
+        
+        .quick-links-section h3 {
+            border-bottom: 2px solid #800000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .quick-links-section ul {
+            list-style: none;
+        }
+        
+        .quick-links-section li {
+            margin-bottom: 8px;
+        }
+        
+        .quick-links-section a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .quick-links-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="layout-header">
+        <div class="layout-container">
+            <div class="university-title">
+                <h1>KYOTO UNIVERSITY</h1>
+                <h2>京都大学</h2>
+            </div>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">京大について</a></li>
+                    <li><a href="#">入試・高大連携</a></li>
+                    <li><a href="#">教育・学生支援</a></li>
+                    <li><a href="#">研究・産官学連携</a></li>
+                    <li><a href="#">国際交流</a></li>
+                    <li><a href="#">社会連携</a></li>
+                    <li><a href="#">学部・大学院等</a></li>
+                </ul>
+            </nav>
+            
+            <hr class="divider">
+            
+            <div class="quick-links">
+                <div class="quick-links-section">
+                    <h3>イベント</h3>
+                    <ul>
+                        <li><a href="#">アクセス</a></li>
+                        <li><a href="#">大学施設案内</a></li>
+                        <li><a href="#">刊行物・資料請求</a></li>
+                    </ul>
+                </div>
+                
+                <div class="quick-links-section">
+                    <h3>受験生</h3>
+                    <ul>
+                        <li><a href="#">在学生</a></li>
+                        <li><a href="#">卒業生</a></li>
+                        <li><a href="#">一般・地域</a></li>
+                        <li><a href="#">企業・研究者</a></li>
+                        <li><a href="#">寄附</a></li>
+                    </ul>
+                </div>
+                
+                <div class="quick-links-section">
+                    <h3>Language</h3>
+                    <ul>
+                        <li><a href="#">日本語</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文简体</a></li>
+                        <li><a href="#">中文繁体</a></li>
+                        <li><a href="#">한국어</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

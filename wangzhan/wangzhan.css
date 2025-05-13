@@ -47,10 +47,6 @@
 body {
     margin: 0;
 }
-/* 为解决 “应为 @ 规则或选择器” 问题，这里添加一个空的样式声明以符合语法要求 */
-body {
-    margin: 0;
-}
   
   /* 新增固定尺寸容器样式 */
   .fixed-container {
@@ -73,14 +69,6 @@ body {
         position: fixed;
     }
 
-
-.layout-header {
-    position: absolute;
-    z-index: 600;
-    width: 100%;
-    color: rgb(178, 187, 205);
-    background-color: rgb(0, 32, 91);
-}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
@@ -120,4 +108,39 @@ html {
 
 *, ::after, ::before {
     box-sizing: inherit;
+}
+.right4 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-menu {
+    margin: 20px 0;
+}
+.main-menu ul {
+    display: flex
+;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+.js-header-search {
+    position: relative;
+    margin-left: auto; /* 关键属性：向右推挤 */
+    margin-right: 20px; /* 可选：右边距 */
+  }
+  .layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header {
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: #b2bbcd;
+    background-color: #00205b;
 }
