@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+}
+
+/* 固定头部样式 */
+.layout-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #00205b; /* 京都大学蓝 */
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* 头部主体容器 */
+.layout-header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* 标志区域 */
+.layout-header-vertical-logo {
+  display: flex;
+  align-items: center;
+}
+
+.photoblack, .photowhite {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.photoblack img, .photowhite img {
+  height: 100%;
+  width: auto;
+}
+
+/* 搜索区域 */
+.right2 {
+  display: flex;
+  align-items: center;
+}
+
+.js-header-search-form {
+  display: flex;
+  margin-left: 20px;
+}
+
+.js-header-search-form-keyword {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 200px;
+}
+
+.js-header-search-form button {
+  padding: 8px 15px;
+  background: #b28d3a; /* 京都大学金 */
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+/* 主导航容器 */
+.header-global-navigation {
+  display: flex;
+  background: #00205b;
+  padding: 0 5%;
+}
+
+.menu__item--level-0 {
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu__item--level-0:hover {
+  background: #003580;
+}
+
+/* 二级下拉菜单 */
+.menu--level-1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: white;
+  color: #333;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1001;
+}
+
+.menu__item--level-0:hover > .menu--level-1 {
+  display: block;
+}
+
+.menu--level-1 p {
+  padding: 10px 15px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu--level-1 p:hover {
+  background: #f5f5f5;
+}
+/* 右侧链接容器 */
+.right4, .right1, .right3, .right5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 5%;
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.right4 p, .right1 p, .right3 p, .right5 p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.right4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+  color: #b28d3a; /* 金色 */
+}
+
+/* 语言选择特殊样式 */
+.right3 {
+  flex-direction: column;
+}
+
+.right3 h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+@media (max-width: 1024px) {
+  .layout-header-body {
+    flex-wrap: wrap;
+  }
+  
+  .header-global-navigation {
+    flex-wrap: wrap;
+  }
+  
+  .menu__item--level-0 {
+    padding: 10px 15px;
+  }
+  
+  .js-header-search-form-keyword {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photoblack, .photowhite {
+    height: 40px;
+  }
+  
+  .right4, .right1, .right3, .right5 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* 隐藏内容区域 */
+.hide1, .hide2, .hide3, .hide4, 
+.hide5, .hide6, .hide7 {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 1001;
+  padding: 15px;
+  width: 250px;
+}
+
+.right4 p:hover + .hide2,
+.right4 p:hover + .hide3,
+.right4 p:hover + .hide4,
+.right4 p:hover + .hide5,
+.right4 p:hover + .hide6,
+.right4 p:hover + .hide7 {
+  display: block;
+}

@@ -5,6 +5,12 @@
     min-width: 100vw; /* 强制横向布局 */ /* 允许横向滚动 */
   }
   
+  .head{
+    display: flex;
+    align-items: center;      /* 垂直居中 */
+    gap: 20px;               /* Logo和文字的间距 */
+    padding: 20px;
+  }
   /* 调整头部为横向排列 */
   .layout-header {
     position: fixed;
@@ -69,32 +75,22 @@ body {
         position: fixed;
     }
 
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
-}
-
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-用户代理样式表
 header {
     display: block;
     unicode-bidi: isolate;
 }
 
-    body {
-        font-size: 15px;
-        line-height: 1.84;
-    }
 
 
 body {
+    
     color: rgb(16, 18, 20);
     font-family: "Noto Sans JP", sans-serif;
     font-size: 13px;
     -webkit-font-smoothing: antialiased;
     line-height: 1.54;
+    font-size: 15px;
+    line-height: 1.84;
 }
 
 html {
@@ -112,7 +108,6 @@ html {
 .right4 {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
 }
 .main-menu {
     margin: 20px 0;
@@ -129,11 +124,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-.js-header-search {
-    position: relative;
-    margin-left: auto; /* 关键属性：向右推挤 */
-    margin-right: 20px; /* 可选：右边距 */
-  }
   .layout-header.is-large {
     box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
 }
@@ -144,3 +134,122 @@ body {
     color: #b2bbcd;
     background-color: #00205b;
 }
+
+.right2 {
+    display: grid;
+grid-template-columns: 1fr auto; /* 左侧自适应，右侧固定宽度 */
+align-items: center;
+padding: 10px 20px;
+position: relative;
+margin-right: 20px; /* 可选：右边距 */ /* 右侧间距 */
+} 
+/* 让搜索框和按钮水平对齐 */
+.js-header-search-form {
+    display: flex;          /* 关键：Flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    gap: 8px;              /* 输入框和按钮的间距 */
+}
+
+/* 输入框样式 */
+.js-header-search-form-keyword {
+    padding: 8px 12px;     /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px;     /* 圆角 */
+}
+
+/* 搜索按钮样式 */
+.js-header-search-form button {
+    padding: 8px 16px;
+    background: #00205b;    /* 深蓝色背景 */
+    color: white;           /* 白色文字 */
+    border: none;
+    border-radius: 4px;
+}
+.right3{
+    background-color: rgb(0, 19, 55);
+    display: block;
+    font-size: 11px;
+}
+.hide2 {
+    position: absolute;
+    right: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 40px 20px;
+    columns: 3;
+    background-color: rgba(16, 18, 20, 0.93);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.left3
+{
+display: flex
+;
+        justify-content: flex-end;
+        border-top: 1px solid #324c7b;
+    }
+    .photoblack{
+        margin-left:    155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 122px;       /* 宽度 */
+        height: 173px;      /* 高度 */
+        background-color: #fff;
+        
+        }
+    
+.righrt1{
+        font-size: 15px;
+        line-height: 1.84;
+}
+.layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header.is-large .layout-header-content-wrapper {
+    height: 173px;
+}
+.header-global-navigation .menu__item--level-0:hover > .menu--level-1 {
+    display: block;
+}
+.hide1, .hide2, .hide3, .hide4, 
+.hide5, .hide6, .hide7 {
+  display: none;
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 1001;
+  padding: 15px;
+  width: 250px;
+}
+.layout-header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .right4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+  color: #b28d3a; /* 金色 */
+}
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+  }
+  .layout-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00205b; /* 京都大学蓝 */
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  .right2 {
+    display: flex;
+    align-items: center;
+  }
