@@ -1,116 +1,23 @@
+.hide2, .hide3, .hide5, .hide6, .hide7 {
+  display: none; /* 保持默认隐藏 */
+  width: 822px; /* 设置宽度 */
+  height: 142px; /* 设置高度 */
+  background-color: rgba(0, 0, 0, 0.5); /* 设置半透明背景，最后一个参数 0.5 表示透明度 */
+  padding: 10px; /* 可根据需要调整内边距 */
+  box-sizing: border-box; /* 确保内边距和边框包含在宽度和高度内 */
+}
 
-.layout-container {
-    display: flex;
-    flex-direction: row;
-    min-width: 100vw; /* 强制横向布局 */ /* 允许横向滚动 */
-  }
   
-  .head{
-    display: flex;
-    align-items: center;      /* 垂直居中 */
-    gap: 20px;               /* Logo和文字的间距 */
-    padding: 20px;
-  }
-  /* 调整头部为横向排列 */
   .layout-header {
     position: fixed;
     width: 100vw;
     height: 173px; /* 固定高度 */
     display: flex;
   }
-  
-  /* 主要内容区域横向排列 */
-  .body {
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-  }
-  
-  /* 横向菜单样式 */
-  .menu--level-0 {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-  }
-*.fixed-top {
-    position: fixed;
-    /* 新增尺寸限制 */
-    width: 100vw;    /* 视口宽度 */
-    height: 100vh;   /* 视口高度 */
-    overflow: auto;  /* 内容超出时显示滚动条 */
-  }
-  
-/* 修复 “应为 @ 规则或选择器” 问题，添加一个简单的选择器 */
-.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    z-index: 1000; /* 确保在其他内容之上 */
-  }
-body {
-    margin: 0;
-}
-  
-  /* 新增固定尺寸容器样式 */
-  .fixed-container {
-    width: 800px;    /* 固定宽度 */
-    height: 600px;   /* 固定高度 */
-    overflow: hidden; /* 隐藏超出内容 */
-    resize: none;    /* 禁止调整大小 */
-  }
 
-    .layout-header.is-large {
-        box-shadow: rgba(0, 19, 55, 0.5) 0px 16px 0px;
-    }
-
-
-
-    .layout-header {
-        transition: box-shadow 0.3s 0.3s;
-    }
-    .layout-header {
-        position: fixed;
-    }
-
-header {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-
-
-body {
-    
-    color: rgb(16, 18, 20);
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 13px;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.54;
-    font-size: 15px;
-    line-height: 1.84;
-}
-
-html {
-    font-family: sans-serif;
-    text-size-adjust: 100%;
-}
-
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-.right4 {
+.left4 {
     width: 90%;
     max-width: 1200px;
-}
-.main-menu {
-    margin: 20px 0;
 }
 .main-menu ul {
     display: flex
@@ -232,7 +139,7 @@ display: flex
     max-width: 1400px;
     margin: 0 auto;
   }
-  .right4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+  .right4 p:hover,.left4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
   color: #b28d3a; /* 金色 */
 }
 body {
@@ -253,3 +160,102 @@ body {
     display: flex;
     align-items: center;
   }
+
+/* 移除超链接下划线 */
+a {
+    text-decoration: none;
+  
+}
+a:link {
+  color: white;
+  text-decoration: none; /* 保持之前移除下划线的样式 */
+}
+/* 让 right4 部分横向排列 */
+.left4 {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许内容换行 */
+    gap: 10px; /* 设置元素之间的间距 */
+}
+
+.left4 p {
+    margin: 0; /* 移除段落默认的外边距 */
+    display: flex; 
+}
+.hide2, .hide3, .hide5, .hide6, .hide7 {
+  display: none;
+}
+.left4 p:nth-child(n):hover ~ .hideX {
+  display: block;
+}.gold-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap; /* 允许元素换行 */
+  gap: 10px; /* 设置元素之间的间距 */
+}
+.right4{
+  display: flex;
+  gap: 10px; 
+}
+.right1{
+  display:flex;
+  gap: 10px;
+}
+.photowhite {
+  display: block;
+  /* 根据需要调整间距 */
+  margin-bottom: 20px; 
+}
+.layout-header {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容换行 */
+}
+.photoblack {
+  /* 保持原有样式 */
+ /* order: 1;  控制显示顺序 */
+}
+.photowhite {
+  /*order: 2;*/
+}
+.left4 {
+  order: 3;
+  width: 100%;
+}
+.right2 {
+  order: 4;
+}
+.right2, .right4 {
+  margin-left: 0; /* 防止向右挤 */
+}
+.hide1 {
+  display: none; /* 确保 .hide1 元素隐藏 */
+}
+
+.left4 {
+    position: relative; /* 为相对定位，作为 .hide2 绝对定位的参考 */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.hide2 {
+    top: 100%; /* 显示在 .left4 的下方 */
+    left: 0;
+    display: none; 
+    box-sizing: border-box;
+    width: 822px; /* 设置宽度为 822px */
+    height: 142px; /* 设置高度为 142px */
+    padding: 40px 40px 20px;
+    columns: 3;
+    background-color: rgba(16, 18, 20, 0.93);
+    margin: 0;
+    list-style: none;
+}
+
+.left4:hover ~ .hide2,
+.left4:hover + .hide2 {
+    display: block; /* 当鼠标悬停在 .left4 上时，显示 .hide2 */
+}
+
+/* 如果 .hide2 是 .left4 的子元素，使用下面的选择器 */
+.left4:hover .hide2 {
+    display: block;
+}
