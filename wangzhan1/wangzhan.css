@@ -1,0 +1,248 @@
+.nav-container, .right1, .right3, .right4, .right5 {
+    display: flex;
+    flex-wrap: nowrap; /* 确保不换行 */
+    align-items: center;
+}
+.gold-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  gap: 10px; /* 设置元素之间的间距 */
+  }
+.hide1, .hide2, .hide3, .hide4, 
+  .hide5, .hide6, .hide7, .hide8 {
+      display: none;
+  }
+.hide1:hover,.hide2:hover,.hide3:hover,.hide5:hover,.hide6:hover,.hide7:hover,.hide8:hover {
+    color: #b28d3a; /* 金色 */
+}
+.hide2 {
+  position: absolute;
+  top: 100%; /* 显示在left4下方 */
+  left: 0;
+  width: 100%;
+  display: none; /* 默认隐藏 */
+  background-color: rgba(16, 18, 20, 0.93);
+  padding: 40px;
+
+}
+.hide2 p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hide2 a {
+    flex: 0 0 calc(33.33% - 20px); /* 每行3个，减去间距 */
+    box-sizing: border-box;
+}
+.left4:hover ~ .hide2,.left4:hover + .hide2 {
+    display: block; /* 当鼠标悬停在 .left4 上时，显示 .hide2 */
+}
+.right1{
+  font-size: 15px;
+  line-height: 1.84;
+  gap: 10px;
+  margin: 0;
+}
+.right1 a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.right1 a:hover {
+    color: #b28d3a;
+    border-radius: 4px;
+}
+.right2 {
+  display: grid;
+  grid-template-columns: 1fr auto; /* 左侧自适应，右侧固定宽度 */
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  margin-right: 20px; /* 可选：右边距 */ /* 右侧间距 */
+  order: 4;
+  gap: 10px;
+} 
+.right3:hover .hide8 {
+  display: block;
+  background-color: #001337;
+  z-index: 1001;
+  padding: 15px;
+  width: 200px;
+  margin-top: 10px; 
+}
+.right3{
+  background-color: #001337;
+  color:#b2bbcd;
+  display: block;
+  font-size: 11px;
+  position: relative;
+  right: auto;
+  margin-left: auto;
+  width: 100px;
+  height: 39px;
+  right: 193.6px;
+}
+.right4{
+  display: flex;
+  gap: 10px; 
+  color: #b2bbcd;
+  right: 116px;
+}
+.right4 p:hover,.left4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+  color: #b28d3a; /* 金色 */
+}
+.left3{
+  display: flex
+  ;
+          justify-content: flex-end;
+          border-top: 1px solid #324c7b;
+  }
+.left4 {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 100%;
+    padding: 0 17px;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px; 
+    position: relative; /* 为相对定位，作为 .hide2 绝对定位的参考 */
+    order: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.left4:hover .hide2 {
+  display: block;
+}
+.left4 p {
+  margin: 0; /* 移除段落默认的外边距 */
+  display: flex; 
+  margin-right: 20px;
+}
+.left4 p:nth-child(n):hover ~ .hideX {
+display: block;
+}
+.main-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body {
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    width: 100%;
+    width: 1142px;
+   height: 173px;
+}
+.layout-header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header {
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: #b2bbcd;
+    background-color: #00205b;
+    position: fixed;
+    width: 100vw;
+    height: 173px; /* 固定高度 */
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 0 155px 0 155px;
+}
+.js-header-search-form {
+    display: flex;          /* 关键：Flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    gap: 8px;              /* 输入框和按钮的间距 */
+}
+.js-header-search-form-keyword {
+    padding: 8px 12px;     /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px;     /* 圆角 */
+}
+.js-header-search-form button {
+    padding: 8px 16px;
+    background: #00205b;    /* 深蓝色背景 */           /* 白色文字 */
+    border: none;
+    border-radius: 4px;
+}
+.photoblack{
+     margin-left: 91.2px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 122px;       /* 宽度 */
+     height: 173px;      /* 高度 */
+     background-color: #fff;
+}  
+.photowhite {
+  margin-left: 16px;
+} 
+.layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header.is-large .layout-header-content-wrapper {
+    height: 173px;
+}
+.header-global-navigation .menu__item--level-0:hover > .menu--level-1 {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+  
+}
+a:link {
+  color: #b2bbcd;
+  text-decoration: none; /* 保持之前移除下划线的样式 */
+}
+
+.photoblack, .photowhite {
+  display: inline-block;
+  vertical-align: middle;
+}
+.photoblack {
+  position: relative;
+  flex-shrink: 0;
+  height: 100%;
+  width: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s, height 0.3s;
+  background-color: #fff;
+  width: 122px;
+  height: 173px;
+}
+.photowhite {
+  margin-left: 16px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto; /* 使导航区域靠右 */
+}
+
+

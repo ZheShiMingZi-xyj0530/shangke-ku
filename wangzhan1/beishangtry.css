@@ -1,0 +1,83 @@
+.body{
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: #b2bbcd;
+    background-color: #00205b;
+    font-size: 15px;
+        line-height: 1.84;
+}
+.layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header {
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: #b2bbcd;
+    background-color: #00205b;
+}
+.photoblack{
+    position: relative;
+    flex-shrink: 0;
+    width: 83px;
+    height: 100%;
+    width: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s, height 0.3s;
+    background-color: #fff;
+}
+.right3{
+    height: 39px;
+        line-height: 39px;
+        display: block;
+        height: 26px;
+        background-color: #001337;
+        font-size: 11px;
+        line-height: 26px;
+}
+.hide8{
+    display: block;
+   text-align: center;
+   background-color: #001337; 
+     font-size: 13px; 
+   font-weight: 500; 
+   line-height: 44px;
+}
+.photowhite{
+    margin-left: 16px;
+}
+.layout-header-content-wrapper {
+    height: 173px;
+}
+.left4 {
+    min-width: 100%;
+    padding: 0 17px;
+    line-height: 72px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 隐藏这些元素 */
+.hide2, .hide3, .hide5, .hide6, .hide7 {
+    display: none;
+    top: 100%;
+}
+
+/* 当鼠标悬停在 .left4 上时显示这些元素 */
+.left4:hover .hide2,
+.left4:hover .hide3,
+.left4:hover .hide5,
+.left4:hover .hide6,
+.left4:hover .hide7 {
+    display: block;
+}
+.right4 p:hover,.left4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+    color: #b28d3a; /* 金色 */
+  }
+ .stylesheelayout-header .js-smooth-scroll-header .js-header .is-larget{
+    display: block;
+ }

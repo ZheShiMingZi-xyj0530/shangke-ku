@@ -13,6 +13,10 @@
     width: 100vw;
     height: 173px; /* 固定高度 */
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: #fff;
   }
 
 .left4 {
@@ -99,14 +103,14 @@ display: flex
         border-top: 1px solid #324c7b;
     }
     .photoblack{
-        margin-left:    155px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 122px;       /* 宽度 */
-        height: 173px;      /* 高度 */
-        background-color: #fff;
-        
+      padding: 0; /* 将 padding 设置为 0 */
+      margin-left: 155px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 153px;       /* 宽度 */
+      height: 216px;      /* 高度 */
+      background-color: #fff;
         }
     
 .righrt1{
@@ -121,6 +125,20 @@ display: flex
 }
 .header-global-navigation .menu__item--level-0:hover > .menu--level-1 {
     display: block;
+}
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-row1 {
+  display: flex;
+  gap: 15px; /* 菜单项间距 */
+}
+.nav-row2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 .hide1, .hide2, .hide3, .hide4, 
 .hide5, .hide6, .hide7 {
@@ -199,22 +217,26 @@ a:link {
   display:flex;
   gap: 10px;
 }
-.photowhite {
-  display: block;
-  /* 根据需要调整间距 */
-  margin-bottom: 20px; 
-}
 .layout-header {
   display: flex;
   flex-wrap: wrap; /* 允许内容换行 */
 }
 .photoblack {
-  /* 保持原有样式 */
- /* order: 1;  控制显示顺序 */
+    margin-left: 155px;
+    width: 153px;
+    height: 216px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .photowhite {
-  /*order: 2;*/
+    display: block;
+    margin-left: 16px; /* 仅保留左侧间隔 */
+    margin-right: 0;
+    margin-bottom: 0;
 }
+
 .left4 {
   order: 3;
   width: 100%;
@@ -236,19 +258,7 @@ a:link {
     gap: 10px; 
 }
 
-.hide2 {
-    top: 100%; /* 显示在 .left4 的下方 */
-    left: 0;
-    display: none; 
-    box-sizing: border-box;
-    width: 822px; /* 设置宽度为 822px */
-    height: 142px; /* 设置高度为 142px */
-    padding: 40px 40px 20px;
-    columns: 3;
-    background-color: rgba(16, 18, 20, 0.93);
-    margin: 0;
-    list-style: none;
-}
+
 
 .left4:hover ~ .hide2,
 .left4:hover + .hide2 {
@@ -258,4 +268,96 @@ a:link {
 /* 如果 .hide2 是 .left4 的子元素，使用下面的选择器 */
 .left4:hover .hide2 {
     display: block;
+}
+.hide7{
+position: absolute;
+top: 100%; /* 显示在left4下方 */
+left: 0;
+width: 100%;
+display: none; /* 默认隐藏 */
+background-color: rgba(16, 18, 20, 0.93);
+padding: 40px;
+}
+.gold {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right1, .right2, .right3, .right4, .right5 {
+  margin-left: 20px; /* 调整间距 */
+}
+
+/* 确保h2标签不影响布局 */
+.right3 h2, .right5 h2 {
+  margin: 0;
+  padding: 0;
+}
+.layout-header {
+  display: flex;
+  justify-content: space-between; /* logo 靠左，导航靠右 */
+  align-items: center;
+  padding: 10px 20px;
+}
+.layout-header {
+  position: fixed;
+  width: 100vw;
+  height:200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 左对齐 */
+  padding: 0 20px;
+  background: #00205b;
+  z-index: 600;
+  top: 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-row1, .nav-row2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+/* 重置全局默认边距 */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.photowhite{
+    display: block;
+    margin: 0; /* 完全重置所有margin */
+    margin-left: 16px; /* 只保留需要的左侧margin */
+}
+.header-global-navigation .menu__link--level-0:hover {
+  color: rgb(178, 141, 58);
+}
+.hide2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 822px;
+  height: 142px;
+  padding: 20px; /* 统一padding */
+  background-color: rgba(16, 18, 20, 0.93);
+  display: none;
+  box-sizing: border-box;
+}
+.two-columns-container {
+  display: flex;
+  flex-direction: column; /* 设置为垂直方向排列 */
+}
+
+.top-column,
+.bottom-column {
+  width: 100%; /* 宽度占满容器 */
+}
+
+/* 可以根据需要添加上下栏之间的间距 */
+.top-column {
+  margin-bottom: 20px;
 }

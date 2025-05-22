@@ -161,7 +161,7 @@ body {
     height: 40px;
   }
   
-  .right4, .right1, .right3, .right5 {
+  .left4, .right1, .right3, .right5 {
     flex-direction: column;
     gap: 10px;
   }
@@ -178,11 +178,11 @@ body {
   width: 250px;
 }
 
-.right4 p:hover + .hide2,
-.right4 p:hover + .hide3,
-.right4 p:hover + .hide4,
-.right4 p:hover + .hide5,
-.right4 p:hover + .hide6,
-.right4 p:hover + .hide7 {
+.left4 p:hover + .hide2,
+.left4 p:hover + .hide3,
+.left4 p:hover + .hide4,
+.left4 p:hover + .hide5,
+.left4 p:hover + .hide6,
+.left4 p:hover + .hide7 {
   display: block;
 }

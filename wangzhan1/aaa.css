@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYOTO UNIVERSITY | 京都大学</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+        
+        /* 顶部导航栏 */
+        .header {
+            background-color: #00205b; /* 京都大学蓝 */
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-en {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .logo-ja {
+            font-size: 18px;
+        }
+        
+        /* 主内容区 */
+        .main-content {
+            margin-top: 100px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 300px 300px; /* 两栏布局 */
+            gap: 40px;
+        }
+        
+        .column {
+            background-color: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .column h2 {
+            color: #00205b;
+            margin-top: 0;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #b28d3a; /* 金色下划线 */
+        }
+        
+        .column h3 {
+            color: #00205b;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        
+        .column ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .column li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        
+        .column li:last-child {
+            border-bottom: none;
+        }
+        
+        .column a {
+            color: #00205b;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+        }
+        
+        .column a:hover {
+            color: #b28d3a;
+        }
+        
+        /* 分隔线 */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+    </style>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-en">KYOTO UNIVERSITY</div>
+                <div class="logo-ja">京都大学</div>
+            </div>
+            <nav>
+                <ul style="display: flex; list-style: none; gap: 20px;">
+                    <li><a href="#" style="color: white; text-decoration: none;">日本語</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div class="column">
+            <h2>京大学</h2>
+            <ul>
+                <li><a href="#">京大について</a></li>
+                <li><a href="#">入試・高大連携</a></li>
+                <li><a href="#">教育・学生支援</a></li>
+                <li><a href="#">研究・産官学連携</a></li>
+                <li><a href="#">国際交流</a></li>
+                <li><a href="#">社会連携</a></li>
+                <li><a href="#">学部・大学院等</a></li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <h3>イベント</h3>
+            <ul>
+                <li><a href="#">アクセス</a></li>
+                <li><a href="#">大学懇談案内</a></li>
+                <li><a href="#">刊行物・資料請求</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>
+            
+            <hr>
+            
+            <h3>受験生</h3>
+            <ul>
+                <li><a href="#">在学生</a></li>
+                <li><a href="#">卒業生</a></li>
+                <li><a href="#">一般・地域</a></li>
+                <li><a href="#">企業・研究者</a></li>
+                <li><a href="#">寄附</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
