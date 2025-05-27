@@ -1,0 +1,363 @@
+.hide2, .hide3, .hide5, .hide6, .hide7 {
+  display: none; /* 保持默认隐藏 */
+  width: 822px; /* 设置宽度 */
+  height: 142px; /* 设置高度 */
+  background-color: rgba(0, 0, 0, 0.5); /* 设置半透明背景，最后一个参数 0.5 表示透明度 */
+  padding: 10px; /* 可根据需要调整内边距 */
+  box-sizing: border-box; /* 确保内边距和边框包含在宽度和高度内 */
+}
+
+  
+  .layout-header {
+    position: fixed;
+    width: 100vw;
+    height: 173px; /* 固定高度 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: #fff;
+  }
+
+.left4 {
+    width: 90%;
+    max-width: 1200px;
+}
+.main-menu ul {
+    display: flex
+;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+  .layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header {
+    position: absolute;
+    z-index: 600;
+    width: 100%;
+    color: #b2bbcd;
+    background-color: #00205b;
+}
+
+.right2 {
+    display: grid;
+grid-template-columns: 1fr auto; /* 左侧自适应，右侧固定宽度 */
+align-items: center;
+padding: 10px 20px;
+position: relative;
+margin-right: 20px; /* 可选：右边距 */ /* 右侧间距 */
+} 
+/* 让搜索框和按钮水平对齐 */
+.js-header-search-form {
+    display: flex;          /* 关键：Flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    gap: 8px;              /* 输入框和按钮的间距 */
+}
+
+/* 输入框样式 */
+.js-header-search-form-keyword {
+    padding: 8px 12px;     /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px;     /* 圆角 */
+}
+
+/* 搜索按钮样式 */
+.js-header-search-form button {
+    padding: 8px 16px;
+    background: #00205b;    /* 深蓝色背景 */
+    color: white;           /* 白色文字 */
+    border: none;
+    border-radius: 4px;
+}
+.right3{
+    background-color: rgb(0, 19, 55);
+    display: block;
+    font-size: 11px;
+}
+.hide2 {
+    position: absolute;
+    right: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 40px 20px;
+    columns: 3;
+    background-color: rgba(16, 18, 20, 0.93);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.left3
+{
+display: flex
+;
+        justify-content: flex-end;
+        border-top: 1px solid #324c7b;
+    }
+    .photoblack{
+      padding: 0; /* 将 padding 设置为 0 */
+      margin-left: 155px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 153px;       /* 宽度 */
+      height: 216px;      /* 高度 */
+      background-color: #fff;
+        }
+    
+.righrt1{
+        font-size: 15px;
+        line-height: 1.84;
+}
+.layout-header.is-large {
+    box-shadow: 0 16px 0 rgba(0, 19, 55, 0.5);
+}
+.layout-header.is-large .layout-header-content-wrapper {
+    height: 173px;
+}
+.header-global-navigation .menu__item--level-0:hover > .menu--level-1 {
+    display: block;
+}
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-row1 {
+  display: flex;
+  gap: 15px; /* 菜单项间距 */
+}
+.nav-row2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.hide1, .hide2, .hide3, .hide4, 
+.hide5, .hide6, .hide7 {
+  display: none;
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 1001;
+  padding: 15px;
+  width: 250px;
+}
+.layout-header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .right4 p:hover,.left4 p:hover, .right1 p:hover, .right3 p:hover, .right5 p:hover {
+  color: #b28d3a; /* 金色 */
+}
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+  }
+  .layout-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00205b; /* 京都大学蓝 */
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  .right2 {
+    display: flex;
+    align-items: center;
+  }
+
+/* 移除超链接下划线 */
+a {
+    text-decoration: none;
+  
+}
+a:link {
+  color: white;
+  text-decoration: none; /* 保持之前移除下划线的样式 */
+}
+/* 让 right4 部分横向排列 */
+.left4 {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许内容换行 */
+    gap: 10px; /* 设置元素之间的间距 */
+}
+
+.left4 p {
+    margin: 0; /* 移除段落默认的外边距 */
+    display: flex; 
+}
+.hide2, .hide3, .hide5, .hide6, .hide7 {
+  display: none;
+}
+.left4 p:nth-child(n):hover ~ .hideX {
+  display: block;
+}.gold-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap; /* 允许元素换行 */
+  gap: 10px; /* 设置元素之间的间距 */
+}
+.right4{
+  display: flex;
+  gap: 10px; 
+}
+.right1{
+  display:flex;
+  gap: 10px;
+}
+.layout-header {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容换行 */
+}
+.photoblack {
+    margin-left: 155px;
+    width: 153px;
+    height: 216px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photowhite {
+    display: block;
+    margin-left: 16px; /* 仅保留左侧间隔 */
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.left4 {
+  order: 3;
+  width: 100%;
+}
+.right2 {
+  order: 4;
+}
+.right2, .right4 {
+  margin-left: 0; /* 防止向右挤 */
+}
+.hide1 {
+  display: none; /* 确保 .hide1 元素隐藏 */
+}
+
+.left4 {
+    position: relative; /* 为相对定位，作为 .hide2 绝对定位的参考 */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+
+
+.left4:hover ~ .hide2,
+.left4:hover + .hide2 {
+    display: block; /* 当鼠标悬停在 .left4 上时，显示 .hide2 */
+}
+
+/* 如果 .hide2 是 .left4 的子元素，使用下面的选择器 */
+.left4:hover .hide2 {
+    display: block;
+}
+.hide7{
+position: absolute;
+top: 100%; /* 显示在left4下方 */
+left: 0;
+width: 100%;
+display: none; /* 默认隐藏 */
+background-color: rgba(16, 18, 20, 0.93);
+padding: 40px;
+}
+.gold {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right1, .right2, .right3, .right4, .right5 {
+  margin-left: 20px; /* 调整间距 */
+}
+
+/* 确保h2标签不影响布局 */
+.right3 h2, .right5 h2 {
+  margin: 0;
+  padding: 0;
+}
+.layout-header {
+  display: flex;
+  justify-content: space-between; /* logo 靠左，导航靠右 */
+  align-items: center;
+  padding: 10px 20px;
+}
+.layout-header {
+  position: fixed;
+  width: 100vw;
+  height:200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 左对齐 */
+  padding: 0 20px;
+  background: #00205b;
+  z-index: 600;
+  top: 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-row1, .nav-row2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+/* 重置全局默认边距 */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.photowhite{
+    display: block;
+    margin: 0; /* 完全重置所有margin */
+    margin-left: 16px; /* 只保留需要的左侧margin */
+}
+.header-global-navigation .menu__link--level-0:hover {
+  color: rgb(178, 141, 58);
+}
+.hide2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 822px;
+  height: 142px;
+  padding: 20px; /* 统一padding */
+  background-color: rgba(16, 18, 20, 0.93);
+  display: none;
+  box-sizing: border-box;
+}
+.two-columns-container {
+  display: flex;
+  flex-direction: column; /* 设置为垂直方向排列 */
+}
+
+.top-column,
+.bottom-column {
+  width: 100%; /* 宽度占满容器 */
+}
+
+/* 可以根据需要添加上下栏之间的间距 */
+.top-column {
+  margin-bottom: 20px;
+}

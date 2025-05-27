@@ -1,0 +1,15 @@
+.layout-header {
+  position: absolute;
+  z-index: 600;
+  width: 100%;
+  color: #b2bbcd;
+  background-color: #00205b;
+  position: fixed;
+  width: 100vw;
+  height: 173px; /* 固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background: #fff;
+}
